@@ -83,9 +83,29 @@ const HomeScreen = () => {
 
         {/* Feature Row */}
         <FeatureRows
+          id="1"
           title="Feature"
           description="Paid placement from our partners"
+          FeatureCategories="Features"
         />
+
+        {/* Discount */}
+        <FeatureRows
+          id="2"
+          title="Discount"
+          description="Paid placement from our partners"
+          FeatureCategories="Discount"
+        />
+
+        {/* Offer From near you */}
+        <FeatureRows
+          id="3"
+          title="Offer From near you"
+          description="Paid placement from our partners"
+          FeatureCategories="Offer From near you"
+        />
+
+
       </ScrollView>
     </SafeAreaView>
   )
