@@ -1,9 +1,12 @@
-import { Image,TextInput, Text, View } from 'react-native'
+import { ScrollView,Image,TextInput, Text, View } from 'react-native'
 import React, { useLayoutEffect } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import deliveryNow from "../assets/deliveryNow.png"
 import {  AdjustmentsVerticalIcon, ChevronDownIcon, MagnifyingGlassIcon, UserIcon } from "react-native-heroicons/outline"
+import Categories from './Categories'
+import FeatureRows from './FeatureRows'
+
 
 
 
@@ -67,6 +70,23 @@ const HomeScreen = () => {
         </View>
         <AdjustmentsVerticalIcon color="#16C47F" />
       </View>
+
+      {/* Body */}
+      <ScrollView
+      className="bg-gray-200 p-4 m-4"
+      contentContainerStyle={{
+        paddingBottom:2 
+      }}
+      >
+        {/* Categories */}
+        <Categories/>
+
+        {/* Feature Row */}
+        <FeatureRows
+          title="Feature"
+          description="Paid placement from our partners"
+        />
+      </ScrollView>
     </SafeAreaView>
   )
 }
