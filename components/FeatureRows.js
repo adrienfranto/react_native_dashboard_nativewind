@@ -39,9 +39,9 @@ const FeatureRows = ({id,title,description,FeatureCategories}) => {
                 description="this is test description"
                 genre="Japanese"
                 long={0.32223}
-                c={[]}
+                lat={[]}
                 dishes=""
-                adresse=""
+                adresse="At 345 House 12 Street"
                 rating={5}
             />
         </ScrollView>

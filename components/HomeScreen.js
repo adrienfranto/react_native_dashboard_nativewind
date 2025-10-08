@@ -64,7 +64,7 @@ const HomeScreen = () => {
           <TextInput 
             placeholder='Restaurants And cuisine'
             keyboardType='default'
-            className="w-full font-semibold text-xl"
+            className="w-full font-semibold text-md outline-none hover:outline hover:outline-green-100 rounded-sm "
 
           />
         </View>
